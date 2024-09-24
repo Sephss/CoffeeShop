@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".orderPage">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/myfont"
+        android:text="Select type of coffee"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="3in"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <LinearLayout
+        android:layout_width="394dp"
+        android:layout_height="193dp"
+        android:background="@color/brown"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204">
+
+        <!-- Image on the left -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0.8in"
+            android:layout_height="0.8in"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Hot coffee image"
+            android:src="@drawable/hot_coffee" />
+
+        <!-- Text and Button on the right -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Description -->
+
+            <!-- Order Button -->
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Freshly brewed hot coffee with a bold, rich flavor and a smooth finish. Perfect for a warm, energizing start to your day."
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/hotCoffeeBtn"
+                android:layout_width="1.4in"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/lightBrown"
+                android:text="Order Now!"
+                android:textColor="@color/darkBrown" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="394dp"
+        android:layout_height="193dp"
+        android:background="@color/brown"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526">
+
+        <!-- Image on the left -->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0.8in"
+            android:layout_height="0.8in"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Hot coffee image"
+            android:src="@drawable/ice_coffee" />
+
+        <!-- Text and Button on the right -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Description -->
+
+            <!-- Order Button -->
+            <TextView
+                android:id="@+id/descriptionText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Chilled and bold with a smooth finish. Perfect for a refreshing, energizing boost any time."
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/iceCoffeeButton"
+                android:layout_width="1.4in"
+                android:layout_marginTop="0.1in"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/lightBrown"
+                android:text="Order Now!"
+                android:textColor="@color/darkBrown" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="394dp"
+        android:layout_height="193dp"
+        android:background="@color/brown"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849">
+
+        <!-- Image on the left -->
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0.8in"
+            android:layout_height="0.8in"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Pastries image"
+            android:src="@drawable/pastries" />
+
+        <!-- Text and Button on the right -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Description -->
+
+            <!-- Order Button -->
+
+            <TextView
+                android:id="@+id/descriptionText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Start with light, flaky, and buttery. Perfect for a delicious, satisfying start to your day"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/pastriesButton"
+                android:layout_width="1.4in"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0.2in"
+                android:background="@color/lightBrown"
+                android:text="Order Now!"
+                android:textColor="@color/darkBrown" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
